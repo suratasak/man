@@ -1,0 +1,6 @@
+{
+  "name": "Ghost Cyber Portfolio - Introvert Static Portfolio",
+  "description": "Futuristic, high-tech, privacy-focused web portfolio for introverted developers and creators. Complete with Cyberpunk HUD, interactive matrix canvas, terminal mode, and Cloudflare Pages static export configuration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
