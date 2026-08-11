@@ -23,28 +23,8 @@ export const CyberFooter: React.FC<CyberFooterProps> = ({ alias, onOpenTerminal,
         </div>
 
         {/* Center shortcuts */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenTerminal();
-            }}
-            className="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-slate-700 transition-colors flex items-center gap-1.5 text-[11px]"
-          >
-            <Terminal className="w-3 h-3 text-cyan-400" />
-            <span>TERMINAL (~)</span>
-          </button>
-
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenDeployModal();
-            }}
-            className="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-amber-400 hover:border-slate-700 transition-colors flex items-center gap-1.5 text-[11px]"
-          >
-            <Cloud className="w-3 h-3" />
-            <span>CLOUDFLARE PAGES READY</span>
-          </button>
+        <div className="flex items-center gap-3 text-[11px] text-slate-500">
+          <span>STATIC & RESPONSIVE PORTFOLIO</span>
         </div>
 
         {/* Right copyright */}

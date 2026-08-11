@@ -102,7 +102,7 @@ export const CyberHeader: React.FC<CyberHeaderProps & { realNameOrDisplay?: stri
                 setShowThemePicker(!showThemePicker);
               }}
               className="p-2 rounded bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all flex items-center gap-1.5 font-mono"
-              title="Change Futuristic Theme Color"
+              title="Change Theme Color"
             >
               <Palette className="w-3.5 h-3.5 text-cyan-400" />
               <span className="hidden sm:inline text-[11px]">THEME</span>
@@ -137,45 +137,6 @@ export const CyberHeader: React.FC<CyberHeaderProps & { realNameOrDisplay?: stri
               </div>
             )}
           </div>
-
-          {/* Terminal Launcher */}
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenTerminal();
-            }}
-            className="p-2 rounded bg-slate-900/80 text-cyan-400 border border-cyan-500/40 hover:bg-cyan-950/60 transition-all flex items-center gap-1.5 font-mono group"
-            title="Open Interactive Terminal (~)"
-          >
-            <Terminal className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
-            <span className="hidden sm:inline text-[11px]">TERMINAL</span>
-            <span className="hidden lg:inline text-[9px] px-1 bg-slate-800 rounded text-slate-400 border border-slate-700">~</span>
-          </button>
-
-          {/* Customizer Modal Button */}
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenEditor();
-            }}
-            className="px-3 py-1.5 rounded bg-purple-950/80 text-purple-300 border border-purple-500/50 hover:bg-purple-900/80 transition-all flex items-center gap-1.5 font-mono shadow-[0_0_10px_rgba(168,85,247,0.2)]"
-            title="ระบุหรือแก้ไขข้อมูลส่วนตัวของคุณ"
-          >
-            <Edit3 className="w-3.5 h-3.5 text-purple-400" />
-            <span className="text-[11px] font-bold">ใส่ข้อมูลส่วนตัว (PROFILE)</span>
-          </button>
-
-          {/* Cloudflare Pages Deploy Guide Button */}
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenDeployModal();
-            }}
-            className="px-3 py-1.5 rounded bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-400 border border-amber-500/40 hover:border-amber-400/80 transition-all flex items-center gap-1.5 font-mono font-semibold shadow-[0_0_12px_rgba(245,158,11,0.15)]"
-          >
-            <Cloud className="w-3.5 h-3.5 animate-bounce" />
-            <span>HOST ON CLOUDFLARE</span>
-          </button>
         </div>
       </div>
     </header>

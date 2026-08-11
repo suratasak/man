@@ -46,33 +46,13 @@ export const CyberExperience: React.FC<CyberExperienceProps> = ({
             ประวัติการทำงาน & ผลงาน (Work History)
           </h2>
         </div>
-
-        <button
-          onClick={() => {
-            playCyberClick();
-            onOpenEditProfile();
-          }}
-          className="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700/80 hover:border-slate-500 text-xs font-mono text-slate-300 hover:text-white transition-all flex items-center gap-2 self-start md:self-auto"
-        >
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-          <span>+ เพิ่ม/แก้ไข ประวัติของคุณ (Edit Profile)</span>
-        </button>
       </div>
 
       {experiences.length === 0 ? (
         <div className="p-8 rounded-2xl bg-slate-900/60 border border-dashed border-slate-800 text-center font-mono">
-          <p className="text-slate-400 text-sm mb-3">
-            ยังไม่มีข้อมูลประวัติการทำงานในระบบ
+          <p className="text-slate-400 text-sm">
+            ไม่มีรายการประวัติการทำงานในระบบ
           </p>
-          <button
-            onClick={() => {
-              playCyberClick();
-              onOpenEditProfile();
-            }}
-            className="px-5 py-2.5 rounded-lg bg-cyan-500 text-slate-950 text-xs font-bold hover:bg-cyan-400 transition-colors inline-flex items-center gap-2"
-          >
-            <span>กรอกข้อมูลประวัติส่วนตัวของคุณ (Setup Profile)</span>
-          </button>
         </div>
       ) : (
         <div className="relative border-l-2 border-slate-800 ml-4 md:ml-8 space-y-8 pl-6 md:pl-10">

@@ -1,34 +1,34 @@
 import { PortfolioData } from '../types';
 
 export const defaultPortfolioData: PortfolioData = {
-  alias: "GHOST_PROTOCOL_v4",
-  realNameOrDisplay: "Anonymous Dev / นักพัฒนาซอฟต์แวร์",
-  emailContact: "dev.anon@protonmail.com",
-  title: "Systems Architect & Full-Stack Developer",
-  tagline: "I write clean code and build quiet systems. No noise, just performance.",
-  bio: "An introverted software engineer who prefers terminal prompts over small talk. Focused on building high-concurrency microservices, resilient full-stack web applications, and security tooling with 100% privacy compliance. Let the codebase speak for itself.",
+  alias: "MAN_PROFILE",
+  realNameOrDisplay: "Man Profile (คุณแมน)",
+  emailContact: "suratasak@gmail.com",
+  title: "CEO FATATECH THAILAND",
+  tagline: "I write for testing my personal website.",
+  bio: "Experienced Passionate about building fast.",
   privacyLevel: "Selective Disclosure",
-  locationAlias: "Bangkok, Thailand // Encrypted Node #1024",
-  statusMessage: "Currently in deep work mode. Asynchronous communications only.",
+  locationAlias: "Bangkok, Thailand",
+  statusMessage: "Available for new projects",
   avatarStyle: "cyber_mask",
   themeColor: "cyan",
   bgEffect: "matrix",
   experiences: [
     {
       id: "exp-1",
-      role: "Senior Systems Architect / Full-Stack Lead",
-      companyOrProject: "DeepTech Studio",
-      period: "2023 - Present",
-      description: "Designed high-throughput microservices using Go and Node.js. Built privacy-first frontend HUDs and automated CI/CD static deployments to Cloudflare Workers and Edge CDNs.",
-      technologies: ["TypeScript", "React", "Go", "Cloudflare Pages", "Docker"]
+      role: "Co-founder and CEO",
+      companyOrProject: "FATATECH THAILAND",
+      period: "2018 - Present",
+      description: "Local System Integrator in Thailand.",
+      technologies: ["Networking", "Cloud Computing", "Cyber Security", "Cabling and Datacenter implementator", "Project management"]
     },
     {
       id: "exp-2",
-      role: "Software Engineer",
-      companyOrProject: "CyberSystems Co.",
-      period: "2021 - 2023",
-      description: "Developed secure REST and WebSocket APIs, optimized database queries for millions of active requests, and implemented zero-trust authentication layers.",
-      technologies: ["Node.js", "Express", "PostgreSQL", "Redis", "Tailwind CSS"]
+      role: "Project Manager",
+      companyOrProject: "NextStep",
+      period: "2017 - 2018",
+      description: "Developed and Managed PM team.",
+      technologies: ["Computer Skill", "People Management", "Project Management"]
     }
   ],
   pgpKey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -38,33 +38,7 @@ Comment: https://openpgpjs.org
 mQENBF+1aX8BCACz8s9dYqX5zW+4uR0vK2M1O+9m2zX3sR8t1q2W4e5r...
 [ANONYMOUS PGP KEY FOR SECURE ASYNC TRANSMISSION]
 -----END PGP PUBLIC KEY BLOCK-----`,
-  traits: [
-    {
-      label: "Social Battery",
-      value: "15% / 100%",
-      description: "Recharges best with solitude, dark room, lo-fi beats, and code editor.",
-      iconName: "BatteryLow"
-    },
-    {
-      label: "Preferred Comms",
-      value: "Async Text Only",
-      description: "No spontaneous video calls required. Detailed pull requests & docs preferred.",
-      iconName: "MessageSquareCode"
-    },
-    {
-      label: "Privacy Index",
-      value: "100% Zero PII",
-      description: "No real face photo, no phone number, no home address. Pure engineering value.",
-      iconName: "ShieldCheck"
-    },
-    {
-      label: "Focus Environment",
-      value: "Neovim + Dark Mode",
-      description: "Operates with maximum efficiency in minimal noise environments.",
-      iconName: "Terminal"
-    }
-  ],
-  socials: [
+    socials: [
     {
       platform: "GitHub",
       handle: "@ghost-dev-proto",

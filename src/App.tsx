@@ -30,22 +30,8 @@ export default function App() {
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [isDeployModalOpen, setIsDeployModalOpen] = useState(false);
 
-  // Keyboard shortcut listener for ~ key
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === '`' || e.key === '~') {
-        // Avoid opening if user is typing in input or textarea
-        const activeElem = document.activeElement;
-        const isInput = activeElem?.tagName === 'INPUT' || activeElem?.tagName === 'TEXTAREA';
-        if (!isInput) {
-          e.preventDefault();
-          setIsTerminalOpen((prev) => !prev);
-        }
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  // Keyboard shortcut listener disabled
+
 
   const handleSaveData = (newData: PortfolioData) => {
     setPortfolioData(newData);

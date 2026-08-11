@@ -79,26 +79,6 @@ export const CyberHero: React.FC<CyberHeroProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         {/* Left Column: Bio & Decrypted Title */}
         <div className="lg:col-span-7 space-y-6 text-left">
-          {/* Thai Profile Setup Banner Prompt */}
-          <div className="p-3.5 rounded-xl bg-purple-950/40 border border-purple-500/40 text-purple-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-sans shadow-lg">
-            <div className="flex items-center gap-2">
-              <span className="text-base">👤</span>
-              <div>
-                <strong className="text-white">ระบุหรือแสดงประวัติส่วนตัวของคุณ:</strong>
-                <p className="text-purple-300/90 text-[11px]">คุณสามารถใส่ชื่อ ทักษะ ประวัติการทำงาน และผลงานจริงลงในเว็บนี้ได้ทันที</p>
-              </div>
-            </div>
-            <button
-              onClick={() => {
-                playCyberClick();
-                onOpenEditor();
-              }}
-              className="px-3.5 py-2 rounded-lg bg-purple-500 text-slate-950 font-bold hover:bg-purple-400 transition-colors whitespace-nowrap text-xs flex items-center justify-center gap-1.5 shadow-md"
-            >
-              <span>✏️ กรอกข้อมูลโปรไฟล์ของคุณ</span>
-            </button>
-          </div>
-
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300">
             <Radio className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
@@ -186,33 +166,12 @@ export const CyberHero: React.FC<CyberHeroProps> = ({
             <button
               onClick={() => {
                 playCyberClick();
-                onOpenEditor();
-              }}
-              className="px-5 py-3 rounded-lg font-mono text-xs font-bold text-slate-950 bg-purple-400 hover:bg-purple-300 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:scale-[1.02]"
-            >
-              <span>✏️ ใส่ข้อมูลส่วนตัว (SETUP PROFILE)</span>
-            </button>
-
-            <button
-              onClick={() => {
-                playCyberClick();
-                onOpenTerminal();
-              }}
-              className={`px-5 py-3 rounded-lg font-mono text-xs font-bold transition-all flex items-center gap-2 border ${getAccentGlowClass(themeColor)} hover:scale-[1.02]`}
-            >
-              <Terminal className="w-4 h-4" />
-              <span>LAUNCH TERMINAL [~]</span>
-            </button>
-
-            <button
-              onClick={() => {
-                playCyberClick();
                 onScrollToProjects();
               }}
-              className="px-5 py-3 rounded-lg font-mono text-xs font-medium text-slate-200 bg-slate-900/90 border border-slate-700/80 hover:border-slate-500 hover:bg-slate-800 transition-all flex items-center gap-2"
+              className={`px-6 py-3 rounded-lg font-mono text-xs font-bold transition-all flex items-center gap-2 border ${getAccentGlowClass(themeColor)} hover:scale-[1.02] shadow-lg`}
             >
-              <Code2 className="w-4 h-4 text-slate-400" />
-              <span>VIEW PROJECTS</span>
+              <Code2 className="w-4 h-4" />
+              <span>VIEW PROJECTS & WORK</span>
             </button>
 
             <button
@@ -220,10 +179,10 @@ export const CyberHero: React.FC<CyberHeroProps> = ({
                 playCyberClick();
                 onScrollToContact();
               }}
-              className="px-4 py-3 rounded-lg font-mono text-xs text-slate-400 hover:text-slate-200 hover:bg-slate-900/60 transition-all flex items-center gap-1.5"
+              className="px-5 py-3 rounded-lg font-mono text-xs font-medium text-slate-300 bg-slate-900/90 border border-slate-700/80 hover:border-slate-500 hover:bg-slate-800 transition-all flex items-center gap-2"
             >
-              <Lock className="w-3.5 h-3.5" />
-              <span>PGP CONTACT</span>
+              <Lock className="w-3.5 h-3.5 text-cyan-400" />
+              <span>CONTACT & LINKS</span>
             </button>
           </div>
         </div>
